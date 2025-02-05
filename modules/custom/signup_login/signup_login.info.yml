@@ -1,0 +1,7 @@
+name: 'Signup and Login Module'
+type: module
+description: 'Provides a custom signup and login form.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:user

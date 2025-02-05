@@ -1,0 +1,7 @@
+custom_module.simple_page:
+  path: '/custom-service'
+  defaults:
+    _controller: 'Drupal\custom_module\Controller\SimpleController::content'
+    _title: 'Simple Service Example'
+  requirements:
+    _permission: 'access content'

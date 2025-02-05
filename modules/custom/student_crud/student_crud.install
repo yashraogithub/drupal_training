@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Install file for the Student CRUD module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function student_crud_schema() {
+  return [
+    'student_crud' => [
+      'description' => 'Stores student registration data.',
+      'fields' => [
+        'id' => [
+          'description' => 'Primary Key: Unique student ID.',
+          'type' => 'serial',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+        'student_id' => [
+          'description' => 'Student ID.',
+          'type' => 'varchar',
+          'length' => 50,
+          'not null' => TRUE,
+        ],
+        'name' => [
+          'description' => 'Student name.',
+          'type' => 'varchar',
+          'length' => 100,
+          'not null' => TRUE,
+        ],
+        'course' => [
+          'description' => 'Course of the student.',
+          'type' => 'varchar',
+          'length' => 100,
+          'not null' => TRUE,
+        ],
+        'email' => [
+          'description' => 'Student email.',
+          'type' => 'varchar',
+          'length' => 100,
+          'not null' => TRUE,
+        ],
+        'contact' => [
+          'description' => 'Contact number.',
+          'type' => 'varchar',
+          'length' => 15,
+          'not null' => TRUE,
+        ],
+      ],
+      'primary key' => ['id'],
+    ],
+  ];
+}

@@ -1,0 +1,4 @@
+services:
+  custom_module.simple_service:
+    class: Drupal\custom_module\Service\SimpleService
+    arguments: []

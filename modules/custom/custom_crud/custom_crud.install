@@ -1,0 +1,40 @@
+<?php
+
+use Drupal\Core\Database\SchemaObject;
+
+/**
+ * Implements hook_schema().
+ */
+function custom_crud_schema() {
+  $schema['custom_crud_customers'] = [
+    'description' => 'Stores customer information.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'contact_no' => [
+        'type' => 'varchar',
+        'length' => 15,
+        'not null' => TRUE,
+      ],
+      'address' => [
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

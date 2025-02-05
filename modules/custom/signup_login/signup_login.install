@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Install file for the Signup Login module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function signup_login_install() {
+  // Create the custom table for storing user details.
+  Drupal::database()->schema()->createTable('signup_login_users', [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique user ID.',
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'First name of the user.',
+      ],
+      'surname' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Last name of the user.',
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Email of the user.',
+      ],
+      'password' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Hashed password of the user.',
+      ],
+      'contact_number' => [
+        'type' => 'varchar',
+        'length' => 20,
+        'not null' => TRUE,
+        'description' => 'Contact number of the user.',
+      ],
+    ],
+    'primary key' => ['id'],
+  ]);
+}

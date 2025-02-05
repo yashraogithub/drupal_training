@@ -1,0 +1,45 @@
+<?php
+
+use Drupal\Core\Database\SchemaObject;
+
+/**
+ * Implements hook_schema().
+ */
+function doctor_table_schema() {
+  $schema['doctor'] = [
+    'description' => 'Stores information about doctors.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary identifier for the doctor.',
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Name of the doctor.',
+      ],
+      'degree' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Degree of the doctor.',
+      ],
+      'contact_number' => [
+        'type' => 'varchar',
+        'length' => 15,
+        'not null' => TRUE,
+        'description' => 'Contact number of the doctor.',
+      ],
+      'address' => [
+        'type' => 'text',
+        'not null' => TRUE,
+        'description' => 'Address of the doctor.',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

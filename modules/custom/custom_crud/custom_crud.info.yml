@@ -1,0 +1,9 @@
+name: 'Custom CRUD'
+type: module
+description: 'A module for customer management with CRUD functionality.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:system
+libraries:
+  - custom_crud/crud_menu_styles

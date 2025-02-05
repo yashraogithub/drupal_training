@@ -1,0 +1,3 @@
+services:
+  my_custom_module.some_service:
+    class: '\Drupal\trainig_user\SomeService'

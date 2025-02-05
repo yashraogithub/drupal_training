@@ -1,0 +1,6 @@
+name: 'Custom Page'
+type: module
+description: 'A simple custom module that displays "I am Yash Rao".'
+package: Custom
+core_version_requirement: ^10
+dependencies: []

@@ -1,0 +1,7 @@
+doctor_table.add_doctor:
+  path: '/add-doctor'
+  defaults:
+    _form: '\Drupal\doctor_table\Form\AddDoctorForm'
+    _title: 'Add Doctor'
+  requirements:
+    _permission: 'administer site configuration'

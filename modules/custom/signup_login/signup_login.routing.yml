@@ -1,0 +1,23 @@
+signup_login.signup_form:
+  path: '/signup'
+  defaults:
+    _form: '\Drupal\signup_login\Form\SignupForm'
+    _title: 'Signup'
+  requirements:
+    _permission: 'access content'
+
+signup_login.login_form:
+  path: '/login'
+  defaults:
+    _form: '\Drupal\signup_login\Form\LoginForm'
+    _title: 'Login'
+  requirements:
+    _permission: 'access content'
+
+signup_login.home:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\signup_login\Controller\SignupLoginController::home'
+    _title: 'Home'
+  requirements:
+    _permission: 'access content'

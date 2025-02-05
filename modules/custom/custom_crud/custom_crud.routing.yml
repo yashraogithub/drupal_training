@@ -1,0 +1,46 @@
+custom_crud.add_customer:
+  path: '/custom-crud/add-customer'
+  defaults:
+    _form: '\Drupal\custom_crud\Form\CustomerForm'
+    _title: 'Add Customer'
+  requirements:
+    _permission: 'access content'
+
+custom_crud.customer_list:
+  path: '/custom-crud/customer-list'
+  defaults:
+    _controller: '\Drupal\custom_crud\Controller\CustomerListController::customerList'
+    _title: 'Customer List'
+  requirements:
+    _permission: 'access content'
+
+custom_crud.edit_customer:
+  path: '/custom-crud/edit-customer/{id}'
+  defaults:
+    _form: '\Drupal\custom_crud\Form\EditCustomerForm'
+    _title: 'Edit Customer'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      id:
+        type: 'integer'
+  # requirements:
+  #   _permission: 'access content'
+  #   id: \d+
+
+custom_crud.delete_customer:
+  path: '/custom-crud/delete-customer/{id}'
+  defaults:
+    _controller: '\Drupal\custom_crud\Controller\DeleteCustomerController::deleteCustomer'
+    _title: 'Delete Customer'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      id:
+        type: 'integer'
+  # requirements:
+  #   _permission: 'access content'
+  #   id: \d+
+

@@ -1,0 +1,39 @@
+student_crud.register:
+  path: '/student-crud/register'
+  defaults:
+    _form: '\Drupal\student_crud\Form\RegistrationForm'
+    _title: 'Student Registration'
+  requirements:
+    _permission: 'access content'
+
+
+student_crud.list:
+  path: '/student-crud/list'
+  defaults:
+    _controller: '\Drupal\student_crud\Controller\StudentController::listStudents'
+    _title: 'Student List'
+  requirements:
+    _permission: 'access content'
+
+student_crud.edit:
+  path: '/student-crud/edit/{id}'
+  defaults:
+    _form: '\Drupal\student_crud\Form\StudentEditForm'
+    _title: 'Edit Student'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      id:
+        type: integer
+
+student_crud.delete:
+  path: '/student-crud/delete/{id}'
+  defaults:
+    _controller: '\Drupal\student_crud\Controller\StudentDeleteController::delete'
+    _title: 'Delete Student'
+  requirements:
+    _permission: 'access content'
+    id: \d+
+
+

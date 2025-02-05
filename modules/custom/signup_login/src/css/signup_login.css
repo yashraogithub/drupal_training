@@ -1,0 +1,28 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background: #0074d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #005fa3;
+  }
+  

@@ -1,0 +1,7 @@
+name: Training User
+type: module
+description: 'Learning purpose'
+core_version_requirement: ^10
+package: Custom
+version: 1.0
+dependencies: []

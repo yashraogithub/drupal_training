@@ -1,0 +1,11 @@
+services:
+  student_crud.commands:
+    class: Drupal\student_crud\Commands\StudentCrudCommands
+    arguments: []
+    tags:
+      - { name: drush.command }
+  email_validator.service:
+    class: Drupal\student_crud\Service\EmailValidationService
+    arguments: ['@email.validator','@email.validator']
+  
+  

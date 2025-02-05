@@ -1,0 +1,7 @@
+training_user.content:
+  path: '/custom-page'
+  defaults:
+    _controller: '\Drupal\training_user\Controller\CustomController::content'
+    _title: 'Training Page'
+  requirements:
+    _permission: 'access content'

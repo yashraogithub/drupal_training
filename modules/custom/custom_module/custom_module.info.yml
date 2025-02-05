@@ -1,0 +1,7 @@
+name: 'Custom Module'
+type: module
+description: 'A custom module to demonstrate Drupal 10 services.'
+package: Custom
+core_version_requirement: ^10
+dependencies: []
+php: ">=8.1"

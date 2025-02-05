@@ -1,0 +1,5 @@
+services:
+  custom_page.message_service:
+    class: Drupal\custom_page\Service\MessageService
+
+  

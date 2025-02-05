@@ -1,0 +1,3 @@
+services:
+  custom_crud.email_validator:
+    class: 'Drupal\custom_crud\Service\EmailValidator'

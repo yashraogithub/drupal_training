@@ -1,0 +1,7 @@
+name: 'Student CRUD'
+type: module
+description: 'Provides CRUD operations for student registration.'
+core_version_requirement: ^10
+package: Custom
+libraries:
+  - student_crud/global-styles

@@ -1,0 +1,5 @@
+crud_menu:
+  version: 1.x
+  css:
+    theme:
+      css/crud_menu.css: {}

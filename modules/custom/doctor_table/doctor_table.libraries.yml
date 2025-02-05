@@ -1,0 +1,4 @@
+add_doctor_form:
+  css:
+    theme:
+      css/add_doctor_form.css: {}

@@ -1,0 +1,4 @@
+name: 'Doctor Table'
+type: module
+description: 'Creates a custom Doctor table with fields: name, degree, contact number, and address.'
+core_version_requirement: ^10
