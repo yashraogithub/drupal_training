@@ -1,0 +1,7 @@
+name: drupal10
+recipe: drupal10
+config:
+  webroot: .
+services:
+  pma:
+    type: phpmyadmin
